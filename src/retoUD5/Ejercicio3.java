@@ -33,7 +33,7 @@ public class Ejercicio3 implements Serializable{
 		try {
 			ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(archivo));
 			do{
-				System.out.println("Introduce un nombre (Introduce un '-' guión para dejar de introducir: ");
+				System.out.println("Introduce un número (un número negativo detendrá la introducción: ");
 				numero = lectura.nextInt();
 				if(numero>=0) {
 					oos.write(numero);
